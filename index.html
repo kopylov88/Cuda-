@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +7,39 @@
     <title>Cuda</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">   
 </head>
-
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <div class="nav__logo wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s">
+                    <div class="nav__logo">
                         <img src="img/logo.png" alt="logo">
+                        <div class="login">
+                            <a href="#" class="login__link"> Log in</a>
+                        </div> 
                     </div>
                     <div class="nav__menu menu">
+                        <div class="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                         <ul class="menu__list">
-                            <li class="menu__item wow animate__animated animate__fadeInRight" data-wow-duration="2s"><a href="javascript://" class="menu__link">Home</a></li>
-                            <li class="menu__item wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s"><a href="javascript://" class="menu__link">About</a></li>
-                            <li class="menu__item wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s"><a href="javascript://" class="menu__link">Work</a></li>
-                            <li class="menu__item wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s"><a href="javascript://" class="menu__link">Blog</a></li>
-                            <li class="menu__item wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.8s"><a href="javascript://" class="menu__link">Contact</a></li>
+                            <li class="menu__item"><a href="javascript://" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="javascript://" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="javascript://" class="menu__link">Work</a></li>
+                            <li class="menu__item"><a href="javascript://" class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a href="javascript://" class="menu__link">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
+                <div class="hamb-popup">
+                </div>
                 <div class="header__text">
                     <h1 class="wow animate__animated animate__fadeIn" data-wow-duration="3s">
                         Hi there! We are the new kids on the block
@@ -41,6 +48,18 @@
                 </div>
                 <div class="button_orange button wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                     <a class="button__link" href="javascript://">Work with us!</a>
+                </div>
+                <div class="modal">
+                    <div class="modal__wrap">
+                        <div class="modal__body">
+                            <form action="">
+                                <input class="log-in" type="text" placeholder="Enter login">
+                                <input class="password" type="password" placeholder="Enter password">
+                                <button class="login__btn" type="submit"> Log in</button>
+                            </form>
+                            <div class="close">&#10006</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -58,7 +77,7 @@
                         </div>
                     </div>
                     <div class="services__row">
-                        <div class="services__col col wow animate__animated animate__lightSpeedInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="150">
+                        <div class="services__col col wow animate__animated animate__lightSpeedInLeft"  data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="150">
                             <img class="services__img" src="img/flag.png" alt="flag">
                             <div class="col__title">
                                 <h4>Branding</h4>
@@ -68,7 +87,7 @@
                                 consectetuer adipiscing elit, sed diam nonummy nibh.
                             </div>
                         </div>
-                        <div class="services__col col wow animate__animated animate__lightSpeedInLeft" data-wow-duration="1.5s" data-wow-offset="150">
+                        <div class="services__col col wow animate__animated animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-offset="150">
                             <img class="services__img" src="img/pencil.png" alt="pencil">
                             <div class="col__title">
                                 <h4>Design</h4>
@@ -77,7 +96,7 @@
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             </div>
                         </div>
-                        <div class="services__col col wow animate__animated animate__lightSpeedInRight" data-wow-duration="1.5s" data-wow-offset="150">
+                        <div class="services__col col wow animate__animated animate__lightSpeedInRight" data-wow-duration="1s" data-wow-offset="150">
                             <img class="services__img" src="img/gears.png" alt="gears">
                             <div class="col__title">
                                 <h4>Development</h4>
@@ -86,7 +105,7 @@
                                 At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
                             </div>
                         </div>
-                        <div class="services__col col wow animate__animated animate__lightSpeedInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="150">
+                        <div class="services__col col wow animate__animated animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="150">
                             <img class="services__img" src="img/rocket.png" alt="rocket">
                             <div class="col__title">
                                 <h4>Rocket science</h4>
@@ -110,7 +129,7 @@
                         </div>
                     </div>
                     <div class="meet__row">
-                        <div class="meet__col col wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                        <div class="meet__col col wow animate__animated animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                             <div class="meet__img">
                                 <img src="img/AH_Photo_400px.jpg" alt="ann">
                             </div>
@@ -132,7 +151,7 @@
                                 <div class="socials__item"><img src="img/icons/mail_icon.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="meet__col col wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.5s">
+                        <div class="meet__col col wow animate__animated animate__fadeInLeftBig" data-wow-duration="1s">
                             <div class="meet__img">
                                 <img src="img/kate-upton.jpg" alt="kate">
                             </div>
@@ -152,7 +171,7 @@
                                 <div class="socials__item"><img src="img/icons/mail_icon.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="meet__col col wow animate__animated animate__fadeInRightBig" data-wow-duration="1.5s">
+                        <div class="meet__col col wow animate__animated animate__fadeInRightBig" data-wow-duration="1s">
                             <div class="meet__img">
                                 <img src="img/Olivia_Wilde.jpg" alt="olivia">
                             </div>
@@ -173,7 +192,7 @@
                                 <div class="socials__item"><img src="img/icons/mail_icon.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="meet__col col wow animate__animated animate__fadeInRightBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                        <div class="meet__col col wow animate__animated animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
                             <div class="meet__img">
                                 <img src="img/Ashley_Greene.jpg" alt="ashley">
                             </div>
@@ -391,14 +410,14 @@
                     <div class="message__body">
                         <form action="#">
                             <div class="form-wrap wow animate__animated animate__fadeIn" data-wow-duration="2s">
-                                <div class="form-wrap__item">
-                                    <input class="form-wrap__name" type="text" placeholder="Your Name *">
+                                <div class="form-wrap__name">
+                                    <input class="name" type="text" placeholder="Your Name *">
                                 </div>
-                                <div class="form-wrap__item">
-                                    <input class="form-wrap__email" type="email" placeholder="Your Email *">
+                                <div class="form-wrap__email">
+                                    <input class="email" type="email" placeholder="Your Email *">
                                 </div>
-                                <div class="form-wrap__item">
-                                    <textarea class="form-wrap__text" placeholder="Your Message *"></textarea>
+                                <div class="form-wrap__text">
+                                    <textarea class="text" placeholder="Your Message *"></textarea>
                                 </div>
                             </div>
                             <div class="button_blue button wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
