@@ -776,6 +776,7 @@ nav.fixed{
   line-height: 18px;
   font-weight: 400;
   color: #fff;
+  border-radius: 10px;
 }
 .name::placeholder{
   font-style: italic;
@@ -791,6 +792,7 @@ nav.fixed{
   line-height: 18px;
   font-weight: 400;
   color: #fff;
+  border-radius: 10px;
 }
 .email::placeholder{
   font-style: italic;
@@ -807,6 +809,7 @@ nav.fixed{
   font-weight: 400;
   color: #fff;
   resize: vertical;
+  border-radius: 10px;
 }
 .name::placeholder{
   font-style: italic;
