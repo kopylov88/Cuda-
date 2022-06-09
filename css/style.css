@@ -372,7 +372,6 @@ nav.fixed{
 @media(max-width:770px){
   .services__col{
     width: 100%;
-    padding: 0;
   }
 }
 @media(max-width:770px){
