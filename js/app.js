@@ -17,7 +17,8 @@ const modalWrap = document.querySelector('.modal__wrap')
 const closeModal = document.querySelector('.close')
 const modalBody = document.querySelector('.modal__body')
 
-login.addEventListener('click', function(){
+login.addEventListener('click', function(e){
+    e.preventDefault();
     modal.classList.toggle('active')
     modalBody.classList.toggle('active')
 })
