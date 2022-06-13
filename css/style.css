@@ -162,7 +162,7 @@ body.noscroll{
 }
 @media(max-width: 940px){
   .menu__link{
-    padding: 5px;
+    padding: 5px 10px;
   }
 }
 .menu__item {
