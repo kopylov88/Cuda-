@@ -40,8 +40,8 @@ let body = document.body
 
 hamb.addEventListener('click', function(){
     hambPopup.classList.toggle('open');
-    hamb.classList.toggle('clicked')
-    body.classList.toggle('noscroll')
+    hamb.classList.toggle('clicked');
+    body.classList.toggle('noscroll');
 })
 
 /*анимация*/
@@ -78,6 +78,7 @@ for(let hambLink of hambLinks){
     hambLink.addEventListener('click', function(){
         hambPopup.classList.toggle('open');
         hamb.classList.toggle('clicked');
+         body.classList.toggle('noscroll');
     })    
 }
 
